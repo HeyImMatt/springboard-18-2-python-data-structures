@@ -7,6 +7,13 @@ def sum_floats(nums):
         >>> sum_floats([1, 2, 3])
         0
     """
+    result = 0
+    
+    for n in nums:
+        if isinstance(n, float):
+            result += n 
+
+    return result
 
     # hint: to find out if something is a float, you should use the
     # "isinstance" function --- research how to use this to find out
