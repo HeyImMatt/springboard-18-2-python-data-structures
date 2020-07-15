@@ -13,3 +13,7 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+    for n in nums:
+        if n in nums[nums.index(n)+1:]:
+            return n
+    
